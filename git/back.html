@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Change background color via text</h1>
+    <label>Background-Color</label><input type="color" id="colorInput"><br><br>
+    <label>Text color</label><input type="text" id="colorInputText"/>
+
+<input type="button" id="colorButton" value="click to change color" onclick="changeColor()">
+
+<script>
+    function changeColor(){
+// ----------- change color
+    //     let colors = document.getElementById('colorInputText').value;
+  // document.body.style.backgroundColor = color;      //to change background
+    // document.getElementById('h1').style.color = colors;  //to change h1
+let colorBackground = document.getElementById('colorInput').value;
+let colorText = document.getElementById('colorInputText').value;
+document.body.style.backgroundColor= colorBackground;
+document.getElementById('h1').style.color = colorText;
+
+      
+    }
+</script>
+</body>
+</html>
